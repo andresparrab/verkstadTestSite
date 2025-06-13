@@ -11,4 +11,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: "/verkstad/" // Add this line for GitHub Pages deployment
 })

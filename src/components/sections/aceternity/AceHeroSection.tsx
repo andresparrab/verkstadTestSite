@@ -84,7 +84,7 @@ export function AceHeroSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
         >
-          Expert bilservice med certifierade mekaniker, modern utrustning och
+          YO YO Expert bilservice med certifierade mekaniker, modern utrustning och
           engagemang för kvalitet som håller ditt fordon i toppskick.
         </motion.p>
 

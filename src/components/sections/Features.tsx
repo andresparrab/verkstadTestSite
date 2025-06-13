@@ -1,0 +1,173 @@
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import image3 from "../../assets/Media (2).jpg";
+import image from "../../assets/Media (3).jpg";
+import image4 from "../../assets/Media (1).jpg";
+import { Badge } from "@/components/ui/badge";
+
+interface FeatureProps {
+  title: string;
+  description: string;
+  image: string;
+}
+
+interface ServiceItem {
+  name: string;
+  description: string;
+}
+
+const features: FeatureProps[] = [
+  {
+    title: "Professionell Diagnostik",
+    description:
+      "Vi använder den senaste teknologin för att snabbt och exakt diagnostisera problem med ditt fordon. Våra certifierade mekaniker kan identifiera fel som andra missar.",
+    image: image4,
+  },
+  {
+    title: "Kvalitetsdelar & Garanti",
+    description:
+      "Vi använder endast originaldelar och högkvalitativa reservdelar från välkända tillverkare. Alla våra reparationer kommer med omfattande garanti för din trygghet.",
+    image: image3,
+  },
+  {
+    title: "Snabb & Pålitlig Service",
+    description:
+      "Vi förstår att din bil är viktig för din vardag. Därför erbjuder vi snabb service utan att kompromissa med kvaliteten. De flesta reparationer slutförs samma dag.",
+    image: image,
+  },
+];
+
+const featureList: ServiceItem[] = [
+  {
+    name: "Motorservice",
+    description:
+      "Komplett motorunderhåll och reparationer för optimal prestanda och livslängd",
+  },
+  {
+    name: "Bromsreparationer",
+    description: "Säker och pålitlig bromsservice för din trygghet på vägen",
+  },
+  {
+    name: "Däckbyte",
+    description:
+      "Professionell däckmontering och balansering för alla årstider",
+  },
+  {
+    name: "Bilbesiktning",
+    description:
+      "Auktoriserad besiktning för att säkerställa att din bil uppfyller alla krav",
+  },
+  {
+    name: "Klimatservice",
+    description:
+      "Service av luftkonditionering och värme för komfort året runt",
+  },
+  {
+    name: "Batteribyte",
+    description: "Snabb batteribyte och testning för tillförlitlig start",
+  },
+  {
+    name: "Oljebyten",
+    description:
+      "Regelbundna oljebyten med högkvalitativa oljor för motorns hälsa",
+  },
+  {
+    name: "Växellådservice",
+    description:
+      "Service av manuella och automatiska växellådor för smidig körning",
+  },
+  {
+    name: "Karossreparationer",
+    description: "Professionell karossreparation efter skador eller slitage",
+  },
+  {
+    name: "Lackering",
+    description: "Högkvalitativ lackering för att återställa bilens utseende",
+  },
+  {
+    name: "Felsökning",
+    description:
+      "Avancerad diagnostik för att identifiera och lösa komplexa problem",
+  },
+  {
+    name: "Akutservice",
+    description: "24/7 bärgning och akutservice när du behöver hjälp mest",
+  },
+];
+
+export const Features = () => {
+  return (
+    <section id="features" className="container py-24 sm:py-32 space-y-8">
+      <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
+        Våra{" "}
+        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+          Specialområden
+        </span>
+      </h2>
+
+      <TooltipProvider>
+        <div className="flex flex-wrap md:justify-center gap-3">
+          {featureList.map((service: ServiceItem) => (
+            <Tooltip key={service.name} delayDuration={300}>
+              <TooltipTrigger asChild>
+                <div className="transform transition-all duration-300 hover:scale-110 hover:-translate-y-1">
+                  <Badge
+                    variant="secondary"
+                    className="text-sm cursor-pointer hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-sm hover:shadow-md"
+                  >
+                    {service.name}
+                  </Badge>
+                </div>
+              </TooltipTrigger>
+              <TooltipContent
+                side="top"
+                className="max-w-xs text-center p-4 bg-popover text-popover-foreground border border-border shadow-lg rounded-md"
+              >
+                <p className="text-sm font-semibold mb-2 text-foreground">
+                  {service.name}
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  {service.description}
+                </p>
+              </TooltipContent>
+            </Tooltip>
+          ))}
+        </div>
+      </TooltipProvider>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {features.map(({ title, description, image }: FeatureProps) => (
+          <Card
+            key={title}
+            className="hover:shadow-lg transition-shadow duration-300"
+          >
+            <CardHeader>
+              <CardTitle>{title}</CardTitle>
+            </CardHeader>
+
+            <CardContent>{description}</CardContent>
+
+            <CardFooter>
+              <img
+                src={image}
+                alt="Bilverkstad tjänster"
+                className="w-[200px] lg:w-[300px] mx-auto rounded-lg"
+              />
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+    </section>
+  );
+};

@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
@@ -11,10 +12,9 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import image4 from "../../assets/Media (1).jpg";
 import image3 from "../../assets/Media (2).jpg";
 import image from "../../assets/Media (3).jpg";
-import image4 from "../../assets/Media (1).jpg";
-import { Badge } from "@/components/ui/badge";
 
 interface FeatureProps {
   title: string;
@@ -162,7 +162,7 @@ export const Features = () => {
               <img
                 src={image}
                 alt="Bilverkstad tjänster"
-                className="w-[200px] lg:w-[300px] mx-auto rounded-lg"
+                className="w-[200px] lg:w-[300px] lg:h-[400px] mx-auto rounded-lg"
               />
             </CardFooter>
           </Card>

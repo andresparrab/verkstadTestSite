@@ -1,15 +1,15 @@
 "use client";
 
-import { motion } from "motion/react";
-import image from "../../../assets/pexels-anastasia-shuraeva-8470886.jpg";
 import {
+  Calendar,
   CheckCircle,
   Clock,
-  Star,
-  Calendar,
-  Wrench,
   Phone,
+  Star,
+  Wrench,
 } from "lucide-react";
+import { motion } from "motion/react";
+import image from "../../../assets/pexels-anastasia-shuraeva-8470886.jpg";
 
 export function AceHeroSection() {
   const features = [
@@ -84,7 +84,7 @@ export function AceHeroSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
         >
-          YO YO Expert bilservice med certifierade mekaniker, modern utrustning och
+          Expert bilservice med certifierade mekaniker, modern utrustning och
           engagemang för kvalitet som håller ditt fordon i toppskick.
         </motion.p>
 

@@ -1,4 +1,3 @@
-import { Statistics } from "./Statistics";
 import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
@@ -16,6 +15,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Statistics } from "./Statistics";
 
 interface TeamProps {
   imageUrl: string;
@@ -32,7 +32,7 @@ interface SociaNetworkslProps {
 const teamList: TeamProps[] = [
   {
     imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Anna Lindberg",
+    name: "Ahmad",
     position: "Verkstadschef",
     socialNetworks: [
       {
@@ -47,7 +47,7 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "Erik Johansson",
+    name: "Haidar",
     position: "Bilmekaniker",
     socialNetworks: [
       {
@@ -60,36 +60,36 @@ const teamList: TeamProps[] = [
       },
     ],
   },
-  {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Maria Svensson",
-    position: "Diagnostekniker",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-    ],
-  },
-  {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Lars Andersson",
-    position: "Karossreparatör",
-    socialNetworks: [
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-    ],
-  },
+  // {
+  //   imageUrl: "https://i.pravatar.cc/150?img=36",
+  //   name: "Maria Svensson",
+  //   position: "Diagnostekniker",
+  //   socialNetworks: [
+  //     {
+  //       name: "Linkedin",
+  //       url: "https://www.linkedin.com/",
+  //     },
+  //     {
+  //       name: "Facebook",
+  //       url: "https://www.facebook.com/",
+  //     },
+  //   ],
+  // },
+  // {
+  //   imageUrl: "https://i.pravatar.cc/150?img=17",
+  //   name: "Lars Andersson",
+  //   position: "Karossreparatör",
+  //   socialNetworks: [
+  //     {
+  //       name: "Instagram",
+  //       url: "https://www.instagram.com/",
+  //     },
+  //     {
+  //       name: "Facebook",
+  //       url: "https://www.facebook.com/",
+  //     },
+  //   ],
+  // },
 ];
 
 export const AboutTeamSection = () => {

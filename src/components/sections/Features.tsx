@@ -15,6 +15,7 @@ import {
 import image4 from "../../assets/Media (1).jpg";
 import image3 from "../../assets/Media (2).jpg";
 import image from "../../assets/Media (3).jpg";
+import hjulintallning from "../../assets/hjulinsteallning.jpg";
 
 interface FeatureProps {
   title: string;
@@ -45,6 +46,13 @@ const features: FeatureProps[] = [
     description:
       "Vi förstår att din bil är viktig för din vardag. Därför erbjuder vi snabb service utan att kompromissa med kvaliteten. De flesta reparationer slutförs samma dag.",
     image: image,
+  },
+  {
+    title: "Professionell Hjulinställning",
+    description:
+      "Korrekt hjulinställning förbättrar både körkomfort och däckens livslängd. Vi erbjuder noggrann och effektiv hjulinställning med modern utrustning – snabbt och pålitligt.",
+
+    image: hjulintallning,
   },
 ];
 

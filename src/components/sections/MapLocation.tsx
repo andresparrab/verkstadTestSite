@@ -19,7 +19,7 @@ export const MapLocation = () => {
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full h-96 lg:h-[400px] rounded-lg overflow-hidden border">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.5697841644154!2d17.8234567!3d59.4234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCoDI1JzI0LjQiTiAxN8KwNDknMjQuNCJF!5e0!3m2!1sen!2sse!4v1234567890123"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4054.1540952337386!2d17.814331778075115!3d59.465140574680326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465fa2246c726c7d%3A0x864c111fd0fdba9!2zU2thcnByw6R0dGFydsOkZ2VuIDEsIDE3NiA3NyBKw6RyZsOkbGxh!5e0!3m2!1sen!2sse!4v1750061719107!5m2!1sen!2sse"
               width="100%"
               height="100%"
               style={{ border: 0 }}

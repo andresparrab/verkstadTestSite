@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -9,7 +8,6 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import {
   Select,
   SelectContent,
@@ -17,7 +15,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
+import emailjs from "emailjs-com";
 import { Send } from "lucide-react";
+import { useState } from "react";
 import { toast } from "sonner";
 
 interface ContactFormData {
@@ -60,17 +61,18 @@ export const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      // TODO: Implement actual API call
-      // const response = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(formData),
-      // });
-
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      await emailjs.send(
+        "service_3bvi89p",       // ✅ Your Service ID
+        "template_mqh5hq9",      // ✅ Your Template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        "ZLvqaiUSyreuwTMwp"      // ✅ Your Public Key
+      );
 
       toast("Meddelande skickat!", {
         description: "Vi återkommer till dig inom 24 timmar.",

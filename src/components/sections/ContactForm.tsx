@@ -16,7 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -62,8 +62,8 @@ export const ContactForm = () => {
 
     try {
       await emailjs.send(
-        "service_3bvi89p",       // ✅ Your Service ID
-        "template_mqh5hq9",      // ✅ Your Template ID
+        "service_3bvi89p", // ✅ Your Service ID
+        "template_mqh5hq9", // ✅ Your Template ID
         {
           name: formData.name,
           email: formData.email,
@@ -71,7 +71,7 @@ export const ContactForm = () => {
           subject: formData.subject,
           message: formData.message,
         },
-        "ZLvqaiUSyreuwTMwp"      // ✅ Your Public Key
+        "ZLvqaiUSyreuwTMwp" // ✅ Your Public Key
       );
 
       toast("Meddelande skickat!", {

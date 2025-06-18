@@ -26,7 +26,7 @@ const testimonials: TestimonialProps[] = [
   {
     name: "Anna Eriksson",
     userName: "Privatperson",
-    email: "anna.eriksson@email.com",
+
     rating: 5,
     comment:
       "Fantastisk service! Min bil var klar samma dag och körde perfekt. Personalen var mycket hjälpsam och förklarade allt tydligt.",
@@ -41,7 +41,7 @@ const testimonials: TestimonialProps[] = [
   {
     name: "Maria Johansson",
     userName: "Företagskund",
-    email: "maria.johansson@företag.se",
+
     rating: 5,
     comment:
       "Som företag med flera fordon uppskattar vi deras flexibilitet och snabba service. De har hjälpt oss hålla våra bilar på vägen utan onödiga stopp.",
@@ -56,7 +56,6 @@ const testimonials: TestimonialProps[] = [
   {
     name: "Sofie Andersson",
     userName: "Privatperson",
-    email: "sofie.andersson@gmail.com",
     rating: 5,
     comment:
       "Mycket nöjd med deras service. Ärliga och transparenta med både priser och vad som behöver göras. Känner mig alltid trygg när jag lämnar bilen här.",
@@ -110,11 +109,10 @@ export const Testimonials = () => {
                         {[...Array(5)].map((_, i) => (
                           <Star
                             key={i}
-                            className={`w-4 h-4 ${
-                              i < rating
-                                ? "fill-primary text-primary"
-                                : "text-muted-foreground"
-                            }`}
+                            className={`w-4 h-4 ${i < rating
+                              ? "fill-primary text-primary"
+                              : "text-muted-foreground"
+                              }`}
                           />
                         ))}
                       </div>

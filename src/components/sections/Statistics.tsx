@@ -9,11 +9,11 @@ const stats: StatsProps[] = [
     description: "Års erfarenhet",
   },
   {
-    quantity: "5000+",
+    quantity: "1000+",
     description: "Nöjda kunder",
   },
   {
-    quantity: "15000+",
+    quantity: "2000+",
     description: "Genomförda reparationer",
   },
   {

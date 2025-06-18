@@ -12,10 +12,11 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import hjulintallning from "../../assets/hjulinsteallning.jpg";
 import image4 from "../../assets/Media (1).jpg";
 import image3 from "../../assets/Media (2).jpg";
 import image from "../../assets/Media (3).jpg";
-import hjulintallning from "../../assets/hjulinsteallning.jpg";
+import MotorOptimering from "../../assets/MotorOptimering.jpg";
 
 interface FeatureProps {
   title: string;
@@ -53,6 +54,13 @@ const features: FeatureProps[] = [
       "Korrekt hjulinställning förbättrar både körkomfort och däckens livslängd. Vi erbjuder noggrann och effektiv hjulinställning med modern utrustning – snabbt och pålitligt.",
 
     image: hjulintallning,
+  },
+  {
+    title: "Motoroptimering med Högsta Kvalitet",
+    description:
+      "Få ut maximal prestanda och bränsleeffektivitet ur din bil. Vi erbjuder säker och noggrant anpassad motoroptimering med modern teknik – för en starkare, smidigare körupplevelse.",
+
+    image: MotorOptimering,
   },
 ];
 

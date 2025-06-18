@@ -76,6 +76,9 @@ export const ContactForm = () => {
 
       toast("Meddelande skickat!", {
         description: "Vi återkommer till dig inom 24 timmar.",
+        position: "top-right",
+        duration: 5000,
+        icon: "✅",
       });
 
       // Reset form

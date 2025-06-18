@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Clock, Calendar } from "lucide-react";
+import { Calendar, Clock, Mail, MapPin, Phone } from "lucide-react";
 import { ContactForm } from "./ContactForm";
 
 export const ContactUs = () => {
@@ -87,7 +87,7 @@ export const ContactUs = () => {
                       href="tel:+46123456789"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      +46 123 456 789
+                      +46 734923081
                     </a>
                   </div>
                 </div>
@@ -118,9 +118,9 @@ export const ContactUs = () => {
                   <div>
                     <p className="font-semibold">Besöksadress</p>
                     <p className="text-muted-foreground text-sm">
-                      Stäketvägen 15
+                      Skarprättarvägen 1
                       <br />
-                      177 30 Järfälla
+                      176 77 Järfälla
                     </p>
                   </div>
                 </div>

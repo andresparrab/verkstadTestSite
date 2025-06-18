@@ -1,11 +1,8 @@
 import {
-  Mail,
-  Phone,
-  MapPin,
   Clock,
-  Facebook,
-  Instagram,
-  Linkedin,
+  Mail,
+  MapPin,
+  Phone
 } from "lucide-react";
 import logo from "../../assets/logo.jpg";
 
@@ -27,7 +24,7 @@ export const Footer = () => {
             />
           </a>
           <p className="text-muted-foreground mb-6 max-w-md">
-            Sedan 2003 har vi levererat professionell bilservice med fokus på
+            Sedan 2020 har vi levererat professionell bilservice med fokus på
             kvalitet, pålitlighet och kundnöjdhet. Vi är din betrodda partner
             för alla bilbehov.
           </p>
@@ -40,7 +37,7 @@ export const Footer = () => {
                 href="tel:+46123456789"
                 className="text-sm hover:text-primary transition-colors"
               >
-                +46 123 456 789
+                +46 0734923081
               </a>
             </div>
             <div className="flex items-center gap-3">
@@ -55,7 +52,7 @@ export const Footer = () => {
             <div className="flex items-center gap-3">
               <MapPin className="w-4 h-4 text-primary" />
               <span className="text-sm text-muted-foreground">
-                Stäketvägen 15, 177 30 Järfälla
+                Skarprättarvägen 1, 176 77 Järfälla
               </span>
             </div>
           </div>
@@ -161,38 +158,6 @@ export const Footer = () => {
           </div>
 
           {/* Social Media */}
-          <div className="flex flex-col md:items-end">
-            <h4 className="font-semibold mb-4">Följ oss</h4>
-            <div className="flex gap-4">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="p-2 bg-background rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-            </div>
-          </div>
         </div>
       </section>
 

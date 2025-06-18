@@ -1,15 +1,12 @@
 "use client";
-import { AceModeToggle } from "@/components/layout/themes/aceMode-toggle";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
 import logoImage from "@/assets/logo.jpg";
+import { AceModeToggle } from "@/components/layout/themes/aceMode-toggle";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 export function AceNavbar() {
   const navItems = [
-    {
-      link: "#howItWorks",
-      name: "Erbjudande",
-    },
+
     {
       link: "#features",
       name: "Våra Tjänster",
@@ -21,14 +18,6 @@ export function AceNavbar() {
     {
       link: "#testimonials",
       name: "Omdömen",
-    },
-    {
-      link: "#pricing",
-      name: "Priser",
-    },
-    {
-      link: "#faq",
-      name: "FAQ",
     },
     {
       link: "#contact",

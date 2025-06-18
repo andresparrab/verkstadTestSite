@@ -79,6 +79,7 @@ export const ContactForm = () => {
         position: "top-right",
         duration: 5000,
         icon: "✅",
+        richColors: true,
       });
 
       // Reset form

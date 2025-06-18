@@ -154,13 +154,13 @@ export const ContactForm = () => {
                   <SelectValue placeholder="Välj ämne för ditt meddelande" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="service">Boka service</SelectItem>
-                  <SelectItem value="repair">Reparation</SelectItem>
-                  <SelectItem value="inspection">Besiktning</SelectItem>
-                  <SelectItem value="tires">Däck & fälgar</SelectItem>
-                  <SelectItem value="quote">Prisförfrågan</SelectItem>
-                  <SelectItem value="warranty">Garanti</SelectItem>
-                  <SelectItem value="other">Övrigt</SelectItem>
+                  <SelectItem value="Boka service">Boka service</SelectItem>
+                  <SelectItem value="Reparation">Reparation</SelectItem>
+                  <SelectItem value="Besiktning">Besiktning</SelectItem>
+                  <SelectItem value="Däck & fälgar">Däck & fälgar</SelectItem>
+                  <SelectItem value="Prisförfrågan">Prisförfrågan</SelectItem>
+                  <SelectItem value="Garanti">Garanti</SelectItem>
+                  <SelectItem value="Övrigt">Övrigt</SelectItem>
                 </SelectContent>
               </Select>
             </div>

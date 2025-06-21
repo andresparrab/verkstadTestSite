@@ -75,41 +75,33 @@ const featureList: ServiceItem[] = [
     description: "Säker och pålitlig bromsservice för din trygghet på vägen",
   },
   {
-    name: "Däckbyte",
-    description:
-      "Professionell däckmontering och balansering för alla årstider",
-  },
-  {
     name: "Bilbesiktning",
     description:
       "Auktoriserad besiktning för att säkerställa att din bil uppfyller alla krav",
   },
   {
-    name: "Klimatservice",
+    name: "AC service",
     description:
       "Service av luftkonditionering och värme för komfort året runt",
   },
   {
-    name: "Batteribyte",
-    description: "Snabb batteribyte och testning för tillförlitlig start",
-  },
-  {
-    name: "Oljebyten",
-    description:
-      "Regelbundna oljebyten med högkvalitativa oljor för motorns hälsa",
-  },
-  {
     name: "Växellådservice",
     description:
-      "Service av manuella och automatiska växellådor för smidig körning",
+      "Service och reparation av manuella och automatiska växellådor för smidig körning",
   },
   {
     name: "Karossreparationer",
     description: "Professionell karossreparation efter skador eller slitage",
   },
   {
-    name: "Lackering",
-    description: "Högkvalitativ lackering för att återställa bilens utseende",
+    name: "Däckbyte",
+    description:
+      "Professionell däckmontering och balansering för alla årstider",
+  },
+  {
+    name: "Hjulinställning",
+    description:
+      "Noga utförd hjulinställning för att förbättra körkomfort och däckens livslängd",
   },
   {
     name: "Felsökning",

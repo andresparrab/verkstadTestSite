@@ -1,12 +1,11 @@
 "use client";
-import logoImage from "@/assets/logo.jpg";
+import logoImage from "@/assets/logo.svg";
 import { AceModeToggle } from "@/components/layout/themes/aceMode-toggle";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export function AceNavbar() {
   const navItems = [
-
     {
       link: "#features",
       name: "Våra Tjänster",
@@ -32,15 +31,13 @@ export function AceNavbar() {
       <div className="relative w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <a
-              href="#"
-              className="flex items-center space-x-2 text-xl font-black text-foreground font-sans"
-            >
-              <img src={logoImage} alt="logo" width={30} height={30} />
-              <span>Startup</span>
-            </a>
-          </div>
+          <a
+            href="#"
+            className="flex items-center space-x-2 text-xl text-muted-foreground hover:text-foreground transition-colors duration-200 font-bold tracking-tight"
+          >
+            <img src={logoImage} alt="logo" width={60} height={60} />
+            <span>Stäket Mek & Däck</span>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

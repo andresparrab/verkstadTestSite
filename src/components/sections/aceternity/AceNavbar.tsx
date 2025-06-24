@@ -28,17 +28,20 @@ export function AceNavbar() {
 
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-background border-border shadow-sm">
-      <div className="relative w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <nav className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <a
-            href="#"
-            className="flex items-center space-x-2 text-xl text-muted-foreground hover:text-foreground transition-colors duration-200 font-bold tracking-tight"
-          >
-            <img src={logoImage} alt="logo" width={60} height={60} />
-            <span>Stäket Mek & Däck</span>
-          </a>
-
+      <div className="relative flex w-full justify-between items-center max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 h-25">
+        {/* Logo */}
+        <a
+          href="#"
+          className="flex items-center space-x-2 text-xl text-muted-foreground hover:text-foreground transition-colors duration-200 font-bold tracking-tight"
+        >
+          <img
+            src={logoImage}
+            alt="logo"
+            className="h-45 mt-5 w-auto hover:scale-110 transition-transform duration-300"
+          />
+          <span>Stäket Mek & Däck</span>
+        </a>
+        <nav className="h-full flex items-center">
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item, idx) => (

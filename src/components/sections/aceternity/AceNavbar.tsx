@@ -74,18 +74,20 @@ export function AceNavbar() {
 
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t border-border shadow-md">
-              {navItems.map((item, idx) => (
-                <a
-                  key={idx}
-                  href={item.link}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-2 text-base font-bold font-sans text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors duration-200"
-                >
-                  {item.name}
-                </a>
-              ))}
+          <div className="md:hidden absolute top-full left-0 right-0 z-50 bg-background border-t border-border shadow-md">
+            <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="py-3 space-y-1">
+                {navItems.map((item, idx) => (
+                  <a
+                    key={idx}
+                    href={item.link}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="block px-3 py-2 text-base font-bold font-sans text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors duration-200"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         )}

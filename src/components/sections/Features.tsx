@@ -17,6 +17,7 @@ import image4 from "../../assets/Media (1).jpg";
 import image3 from "../../assets/Media (2).jpg";
 import image from "../../assets/Media (3).jpg";
 import MotorOptimering from "../../assets/MotorOptimering.jpg";
+import AcImage from "../../assets/ac-image.jpg";
 
 interface FeatureProps {
   title: string;
@@ -62,6 +63,12 @@ const features: FeatureProps[] = [
 
     image: MotorOptimering,
   },
+  {
+    title: "AC-service och Reparation",
+    description:
+      "Komplett AC-service inklusive felsökning, reparation och påfyllning av köldmedium. Vi utför regelbunden kontroll och underhåll för optimal klimatkomfort året runt – för både kyla och avfuktning.",
+    image: AcImage,
+  },
 ];
 
 const featureList: ServiceItem[] = [
@@ -78,11 +85,6 @@ const featureList: ServiceItem[] = [
     name: "Bilbesiktning",
     description:
       "Auktoriserad besiktning för att säkerställa att din bil uppfyller alla krav",
-  },
-  {
-    name: "AC service",
-    description:
-      "Service av luftkonditionering och värme för komfort året runt",
   },
   {
     name: "Växellådservice",

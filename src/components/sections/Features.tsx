@@ -15,7 +15,7 @@ import {
 import hjulintallning from "../../assets/hjulinsteallning.jpg";
 // import image4 from "../../assets/Media (1).jpg";
 import image3 from "../../assets/Media (2).jpg";
-import image from "../../assets/Media (3).jpg";
+// import image from "../../assets/Media (3).jpg";
 import MotorOptimering from "../../assets/MotorOptimering.jpg";
 import AcImage from "../../assets/ac-image.jpg";
 import diagnos from "../../assets/diagnos.jpg";
@@ -38,18 +38,12 @@ const features: FeatureProps[] = [
       "Vi använder den senaste teknologin för att snabbt och exakt diagnostisera problem med ditt fordon. Våra certifierade mekaniker kan identifiera fel som andra missar.",
     image: diagnos,
   },
-  {
-    title: "Kvalitetsdelar & Garanti",
-    description:
-      "Vi använder endast originaldelar och högkvalitativa reservdelar från välkända tillverkare. Alla våra reparationer kommer med omfattande garanti för din trygghet.",
-    image: image3,
-  },
-  {
-    title: "Snabb & Pålitlig Service",
-    description:
-      "Vi förstår att din bil är viktig för din vardag. Därför erbjuder vi snabb service utan att kompromissa med kvaliteten. De flesta reparationer slutförs samma dag.",
-    image: image,
-  },
+  // {
+  //   title: "Snabb & Pålitlig Service",
+  //   description:
+  //     "Vi förstår att din bil är viktig för din vardag. Därför erbjuder vi snabb service utan att kompromissa med kvaliteten. De flesta reparationer slutförs samma dag.",
+  //   image: image,
+  // },
   {
     title: "Professionell Hjulinställning",
     description:
@@ -70,14 +64,25 @@ const features: FeatureProps[] = [
       "Komplett AC-service inklusive felsökning, reparation och påfyllning av köldmedium. Vi utför regelbunden kontroll och underhåll för optimal klimatkomfort året runt – för både kyla och avfuktning.",
     image: AcImage,
   },
+  {
+    title: "Kvalitetsdelar & Garanti",
+    description:
+      "Vi använder endast originaldelar och högkvalitativa reservdelar från välkända tillverkare. Alla våra reparationer kommer med omfattande garanti för din trygghet.",
+    image: image3,
+  },
 ];
 
 const featureList: ServiceItem[] = [
   {
-    name: "Motorservice",
+    name: "Oljebyten",
     description:
-      "Komplett motorunderhåll och reparationer för optimal prestanda och livslängd",
+      "Regelbundna oljebyten med högkvalitativa oljor för motorns hälsa",
   },
+  // {
+  //   name: "Motorservice",
+  //   description:
+  //     "Komplett motorunderhåll och reparationer för optimal prestanda och livslängd",
+  // },
   {
     name: "Bromsreparationer",
     description: "Säker och pålitlig bromsservice för din trygghet på vägen",
@@ -88,7 +93,7 @@ const featureList: ServiceItem[] = [
       "Auktoriserad besiktning för att säkerställa att din bil uppfyller alla krav",
   },
   {
-    name: "Växellådservice",
+    name: "Renovering av Automat och Manuell Växellåda",
     description:
       "Service och reparation av manuella och automatiska växellådor för smidig körning",
   },
@@ -102,9 +107,24 @@ const featureList: ServiceItem[] = [
       "Professionell däckmontering och balansering för alla årstider",
   },
   {
+    name: "Motoroptimering",
+    description:
+      "maximera prestanda och bränsleeffektivitet med vår motoroptimering",
+  },
+  {
+    name: "AC-service",
+    description:
+      "komplett AC-service inklusive felsökning, reparation och påfyllning av köldmedium",
+  },
+  {
     name: "Hjulinställning",
     description:
       "Noga utförd hjulinställning för att förbättra körkomfort och däckens livslängd",
+  },
+  {
+    name: "Avgassystem",
+    description:
+      "modernisering och reparation av avgassystem för bättre prestanda och lägre utsläpp",
   },
   {
     name: "Felsökning",

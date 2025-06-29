@@ -11,6 +11,10 @@ export function AceNavbar() {
       name: "Våra Tjänster",
     },
     {
+      link: "#pricing",
+      name: "Priser",
+    },
+    {
       link: "#about-team",
       name: "Om Oss",
     },

@@ -8,6 +8,7 @@ import { AceHeroSection } from "./components/sections/aceternity/AceHeroSection"
 import { MapLocation } from "./components/sections/MapLocation";
 import { ScrollToTop } from "./components/sections/ScrollToTop";
 // import { Services } from "./components/sections/Services";
+import { Pricing } from "./components/sections/Pricing";
 
 import { AboutTeamSection } from "./components/sections/AboutTeam";
 import { AceNavbar } from "./components/sections/aceternity/AceNavbar";
@@ -29,7 +30,7 @@ function App() {
       <AboutTeamSection />
 
       <Testimonials />
-      {/* <Pricing /> */}
+      <Pricing />
       {/* <Newsletter /> */}
       {/* <FAQ /> */}
       <ContactUs />

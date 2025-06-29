@@ -30,7 +30,7 @@ const routeList: RouteProps[] = [
   },
   {
     href: "#features",
-    label: "Våra Tjänster",
+    label: "Våra TjänsteR",
   },
   {
     href: "#about-team",
@@ -43,6 +43,10 @@ const routeList: RouteProps[] = [
   {
     href: "#testimonials",
     label: "Omdömen",
+  },
+  {
+    href: "#pricing",
+    label: "Priser",
   },
   {
     href: "#contact",
@@ -113,7 +117,7 @@ export const Navbar = () => {
                 className={`text-[17px] hover:shadow transition-colors duration-200 px-3 py-2  ${buttonVariants(
                   {
                     variant: "ghost",
-                  }
+                  },
                 )}`}
               >
                 {route.label}

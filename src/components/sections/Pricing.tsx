@@ -26,50 +26,54 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Grundservice",
+    title: "Konkurrenskraftiga Priser – Kvalitet utan Kompromiss",
     popular: 0,
-    price: 899,
+    price: 350,
     description:
-      "Perfekt för regelbunden underhåll och för att hålla din bil i god kondition.",
-    buttonText: "Boka Nu",
-    benefitList: [
-      "Oljebyte + filter",
-      "Bromskontroll",
-      "Däcktryck",
-      "Belysningskontroll",
-      "6 månaders garanti",
-    ],
-  },
-  {
-    title: "Komplett Service",
-    popular: 1,
-    price: 1599,
-    description:
-      "Vår mest populära service som inkluderar omfattande kontroll och underhåll.",
-    buttonText: "Boka Service",
-    benefitList: [
-      "Allt i Grundservice",
-      "Motor diagnostik",
-      "Växellådsservice",
-      "Kylsystemkontroll",
-      "12 månaders garanti",
-    ],
-  },
-  {
-    title: "Premium Inspektion",
-    popular: 0,
-    price: 2499,
-    description:
-      "Fullständig genomgång av ditt fordon med detaljerad rapport och rekommendationer.",
+      "En översikt över våra vanligaste tjänster och deras startpriser – alltid transparent och med garanti.",
     buttonText: "Kontakta Oss",
     benefitList: [
-      "Komplett fordonsgranskning",
-      "Avancerad diagnostik",
-      "Detaljerad rapport",
-      "Prioriterad service",
-      "24 månaders garanti",
+      "Oljeservice från 950 kr",
+      "Växellådsservice från 1200 kr",
+      "Kamrembyte från 2900 kr",
+      "Felsökning från 350 kr",
+      "Motoroptimering från 2900 kr",
+      "Hjulinställning från 700 kr",
+      "AC-service från 800 kr",
+      "Däckbyte från 150 kr (inkl. balansering)",
+      "Koppling byte från 3000 kr",
     ],
   },
+  // {
+  //   title: "Komplett Service",
+  //   popular: 1,
+  //   price: 1599,
+  //   description:
+  //     "Vår mest populära service som inkluderar omfattande kontroll och underhåll.",
+  //   buttonText: "Boka Service",
+  //   benefitList: [
+  //     "Allt i Grundservice",
+  //     "Motor diagnostik",
+  //     "Växellådsservice",
+  //     "Kylsystemkontroll",
+  //     "12 månaders garanti",
+  //   ],
+  // },
+  // {
+  //   title: "Premium Inspektion",
+  //   popular: 0,
+  //   price: 2499,
+  //   description:
+  //     "Fullständig genomgång av ditt fordon med detaljerad rapport och rekommendationer.",
+  //   buttonText: "Kontakta Oss",
+  //   benefitList: [
+  //     "Komplett fordonsgranskning",
+  //     "Avancerad diagnostik",
+  //     "Detaljerad rapport",
+  //     "Prioriterad service",
+  //     "24 månaders garanti",
+  //   ],
+  // },
 ];
 
 export const Pricing = () => {
@@ -79,15 +83,16 @@ export const Pricing = () => {
         Våra
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Servicepaket{" "}
+          Tjänster{" "}
         </span>
         & Priser
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Välj det servicepaket som passar dina behov bäst. Alla priser inkluderar
-        arbetskostnad och grundläggande delar.
+        Kvalitetsservice till transparenta priser – alla reparationer inkluderar{" "}
+        <strong>1 års garanti</strong> och utförs av erfarna tekniker. Hos oss
+        vet du alltid vad du betalar för.
       </h3>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (
           <Card
             key={pricing.title}
@@ -107,15 +112,19 @@ export const Pricing = () => {
                 ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">{pricing.price}kr</span>
-                <span className="text-muted-foreground"> /service</span>
+                <span className="text-3xl font-bold">
+                  Från {pricing.price}kr
+                </span>
+                <span className="text-muted-foreground"> /Felsökning</span>
               </div>
 
               <CardDescription>{pricing.description}</CardDescription>
             </CardHeader>
 
             <CardContent>
-              <Button className="w-full">{pricing.buttonText}</Button>
+              <Button className="w-full">
+                <a href="#contact">{pricing.buttonText}</a>
+              </Button>
             </CardContent>
 
             <hr className="w-4/5 m-auto mb-4" />

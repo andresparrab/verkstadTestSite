@@ -13,11 +13,12 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import hjulintallning from "../../assets/hjulinsteallning.jpg";
-import image4 from "../../assets/Media (1).jpg";
+// import image4 from "../../assets/Media (1).jpg";
 import image3 from "../../assets/Media (2).jpg";
 import image from "../../assets/Media (3).jpg";
 import MotorOptimering from "../../assets/MotorOptimering.jpg";
 import AcImage from "../../assets/ac-image.jpg";
+import diagnos from "../../assets/diagnos.jpg";
 
 interface FeatureProps {
   title: string;
@@ -35,7 +36,7 @@ const features: FeatureProps[] = [
     title: "Professionell Diagnostik",
     description:
       "Vi använder den senaste teknologin för att snabbt och exakt diagnostisera problem med ditt fordon. Våra certifierade mekaniker kan identifiera fel som andra missar.",
-    image: image4,
+    image: diagnos,
   },
   {
     title: "Kvalitetsdelar & Garanti",

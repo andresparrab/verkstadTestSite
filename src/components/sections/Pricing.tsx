@@ -92,7 +92,7 @@ export const Pricing = () => {
         <strong>1 års garanti</strong> och utförs av erfarna tekniker. Hos oss
         vet du alltid vad du betalar för.
       </h3>
-      <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8">
         {pricingList.map((pricing: PricingProps) => (
           <Card
             key={pricing.title}
@@ -130,7 +130,7 @@ export const Pricing = () => {
             <hr className="w-4/5 m-auto mb-4" />
 
             <CardFooter className="flex">
-              <div className="space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 w-full">
                 {pricing.benefitList.map((benefit: string) => (
                   <span key={benefit} className="flex">
                     <Check className="text-green-500" />{" "}
